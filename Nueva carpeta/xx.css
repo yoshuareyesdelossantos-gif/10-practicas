@@ -1,0 +1,108 @@
+
+
+:root {
+  --purple-gradient: linear-gradient(to bottom, #7857ff, #2e2be9);
+  --circle-gradient: linear-gradient(to bottom, #4e21ca, rgba(36, 33, 239, 0));
+}
+
+body {
+  background-color: #ecf2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  width: 600px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Para que los bordes del lado morado se ajusten */
+}
+
+/* --- LADO IZQUIERDO --- */
+.result-side {
+  background: var(--purple-gradient);
+  flex: 1; /* Toma el 50% del ancho */
+  padding: 40px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-circle {
+  background: var(--circle-gradient);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.score-circle h1 { font-size: 3rem; margin: 0; }
+
+/* --- LADO DERECHO --- */
+.summary-side {
+  flex: 1;
+  padding: 40px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between; /* Mueve el puntaje a la derecha */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Colores de las filas del resumen */
+.reaction { background-color: #fff5f5; color: #ff5757; }
+.memory { background-color: #fffbf2; color: #ffb01e; }
+.verbal { background-color: #f2fafa; color: #00bd91; }
+.visual { background-color: #f3f3fd; color: #1125d4; }
+
+.btn-continue {
+  width: 100%;
+  padding: 15px;
+  background-color: #303b5a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* Permite que el contenido haga scroll si es largo */
+  }
+
+  .card {
+    flex-direction: column; /* Apila las columnas verticalmente */
+    width: 100%;            /* Ocupa todo el ancho disponible */
+    border-radius: 0;       /* Opcional: quita bordes redondeados en móvil */
+    box-shadow: none;
+  }
+
+  .result-side {
+    border-radius: 0 0 30px 30px; /* Redondea solo la parte de abajo */
+    padding: 20px;
+  }
+
+  .summary-side {
+    padding: 30px;
+  }
+
+  .score-circle {
+    width: 110px;  /* Hacemos el círculo un poco más pequeño en móvil */
+    height: 110px;
+  }
+}

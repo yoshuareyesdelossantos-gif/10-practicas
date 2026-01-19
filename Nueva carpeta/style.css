@@ -1,0 +1,74 @@
+/* Configuración General */
+body {
+    background-color: #f3e5d8; /* Color crema de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Tarjeta Blanca */
+.recipe-card {
+    background-color: white;
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden; /* Para que la imagen respete las esquinas redondeadas */
+    padding-bottom: 20px;
+}
+
+.recipe-img {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    padding: 30px;
+}
+
+/* Caja Rosa de Preparación */
+.prep-time {
+    background-color: #fff7fb;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.prep-time h3 {
+    color: #7b284f;
+    margin-top: 0;
+}
+
+/* Títulos y Listas */
+h1 { font-family: serif; color: #312e2c; }
+h2 { color: #854632; font-family: serif; }
+
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li::marker {
+    color: #854632; /* Color de los puntos/números */
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e3e3e3;
+    margin: 25px 0;
+}
+
+/* Tabla de Nutrición */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+td:last-child {
+    color: #854632;
+}
