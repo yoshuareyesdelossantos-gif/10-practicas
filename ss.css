@@ -1,0 +1,61 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif; /* La fuente típica de este diseño */
+}
+
+body {
+    text-align: center;
+    color: #4c545d;
+    background-image: url('bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Contenedores */
+section, header {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Botones con bordes redondeados y sombra */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-ios { background-color: #26bba4; } /* Verde esmeralda */
+.btn-mac { background-color: #6173ff; } /* Azul suave */
+
+/* Layout de características con Flexbox */
+.features-grid {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.feature-image {
+    flex: 1;
+    transform: translateX(-50px); /* Para el efecto de la imagen saliendo de pantalla */
+}
+
+.feature-text {
+    flex: 1;
+    padding-left: 50px;
+}

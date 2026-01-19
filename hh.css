@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+  font-family: 'Karla', sans-serif; /* Tipografía recomendada */
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  width: 600px;
+  border-radius: 8px;
+  overflow: hidden; /* Para que las esquinas de los hijos no se salgan */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Sección Superior */
+.header {
+  background-color: white;
+  padding: 40px;
+}
+
+.header h2 { color: #2ab2af; margin-top: 0; }
+.header h3 { color: #c0df34; font-size: 1.1rem; }
+.header p { color: #98a6bd; line-height: 1.6; }
+
+/* Contenedor inferior con Flexbox */
+.details {
+  display: flex;
+  color: white;
+}
+
+.subscription, .features {
+  padding: 40px;
+  width: 50%;
+}
+
+/* Columna Izquierda */
+.subscription {
+  background-color: #2ab2af;
+}
+
+.price span {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  background-color: #c0df34;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Columna Derecha */
+.features {
+  background-color: rgba(42, 178, 175, 0.8); /* Un poco más claro */
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.features li { margin-bottom: 5px; }
